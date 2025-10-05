@@ -11,7 +11,7 @@
 # Purchase Cost:
 #Total Cost:
 
-#Important Information#
+#--Constants--#
 deliveryRatePerKM = 15
 salesTax = 0.14
 
@@ -31,8 +31,12 @@ purchaseCost = costofRecordPurchsed + taxPerRecordPurchase
 totalCost = purchaseCost + deliveryCost
 
 #-----Output-----
-print("Hispler Local Vinyl Records - Customer Order Detail")
-print(f"\n\nPurchase summary for {customerName}")
+print("Hispler Local Vinyl Records - Customer Order Details")
+print()
+print(f"Enter customer's name: {customerName}")
+print("Enter distance in kilometers for delivery\t{0:.2f}".format(deliveryDistance))
+print("Enter cost of records purchased\t{0:.2f}".format(costofRecordPurchsed))
+print(f"Purchase summary for {customerName}")
 print("\tDelivery cost:\t${0:.2f}".format(deliveryCost))
 print("\tPurchase cost:\t${0:.2f}".format(purchaseCost))
 print("\tTotal cost:\t${0:.2f}".format(totalCost))
