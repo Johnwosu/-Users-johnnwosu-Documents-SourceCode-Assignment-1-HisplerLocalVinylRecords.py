@@ -15,26 +15,28 @@
 deliveryRatePerKM = 15
 salesTax = 0.14
 
-# Ask the customer to input name
+#----Input--Name
 customerName = input("Enter the customer's name: ")
 
-# Delivery distance
+#---Input--Delivery distance
 deliveryDistance = float(input("Enter the delivery distance: "))
 
-# Cost of record purchased
+#--Input-- record purchased
 costofRecordPurchsed = float(input("Enter the cost of record purchased: "))
 
-#Calculations
+#-----Calculations----
 deliveryCost = deliveryDistance * deliveryRatePerKM
-recordTax = costofRecordPurchsed * salesTax
-purchaseCost = costofRecordPurchsed + recordTax
+taxPerRecordPurchase = costofRecordPurchsed * salesTax
+purchaseCost = costofRecordPurchsed + taxPerRecordPurchase
 totalCost = purchaseCost + deliveryCost
 
-#Output -print
-print(f"Purchase summary for {customerName}")
-print("Delivery cost:\t${0:.2f}".format(deliveryCost))
-print("Purchase cost:\t${0:.2f}".format(purchaseCost))
-print("Total cost:\t${0:.2f}".format(totalCost))
+#-----Output-----
+print("Hispler Local Vinyl Records - Customer Order Detail")
+print(f"\n\nPurchase summary for {customerName}")
+print("\tDelivery cost:\t${0:.2f}".format(deliveryCost))
+print("\tPurchase cost:\t${0:.2f}".format(purchaseCost))
+print("\tTotal cost:\t${0:.2f}".format(totalCost))
+
 
 
 
