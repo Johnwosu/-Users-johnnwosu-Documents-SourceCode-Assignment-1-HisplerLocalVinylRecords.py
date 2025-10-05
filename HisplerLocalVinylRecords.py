@@ -21,5 +21,7 @@ customerName = input("Enter the customer's name: ")
 # Delivery distance
 deliveryDistance = float(input("Enter the delivery distance: "))
 
+# Cost of record purchased
+costofRecordPurchsed = float(input("Enter the cost of record purchased: "))
 
 
