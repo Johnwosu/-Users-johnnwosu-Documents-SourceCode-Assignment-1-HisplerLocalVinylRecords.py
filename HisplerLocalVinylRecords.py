@@ -29,4 +29,11 @@ deliveryCost = deliveryDistance * deliveryRatePerKM
 purchaseCost = costofRecordPurchsed * salesTax
 totalCost = purchaseCost + deliveryCost
 
+#Output -print
+print("Purchase summary for\t${0:.2f}".format(customerName)) 
+print("Delivery cost:\t${0:.2f}".format(deliveryCost))
+print("Purchase cost:\t${0:.2f}".format(purchaseCost))
+print()
+
+
 
