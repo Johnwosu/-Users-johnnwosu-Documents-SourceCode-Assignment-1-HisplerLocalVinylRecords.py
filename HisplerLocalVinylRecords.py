@@ -35,13 +35,14 @@ print()
 print("Hispler Local Vinyl Records - Customer Order Details")
 print()
 print(f"Enter customer's name: {customerName}")
-print("Enter distance in kilometers for delivery:\t{0:.1f}".format(deliveryDistance))
-print("Enter cost of records purchased:\t{0:.2f}".format(costofRecordPurchsed))
+print("Enter distance in kilometers for delivery: {0:.1f}".format(deliveryDistance))
+print("Enter cost of records purchased: ${0:.2f}".format(costofRecordPurchsed))
 print()
 print(f"Purchase summary for {customerName}")
 print("Delivery cost:\t${0:.2f}".format(deliveryCost))
 print("Purchase cost:\t${0:.2f}".format(purchaseCost))
 print("Total cost:\t${0:.2f}".format(totalCost))
+print()
 
 
 
