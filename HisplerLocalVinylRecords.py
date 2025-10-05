@@ -24,4 +24,9 @@ deliveryDistance = float(input("Enter the delivery distance: "))
 # Cost of record purchased
 costofRecordPurchsed = float(input("Enter the cost of record purchased: "))
 
+#Calculations
+deliveryCost = deliveryDistance * deliveryRatePerKM
+purchaseCost = costofRecordPurchsed * salesTax
+totalCost = purchaseCost + deliveryCost
+
 
