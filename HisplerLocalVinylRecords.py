@@ -26,14 +26,15 @@ costofRecordPurchsed = float(input("Enter the cost of record purchased: "))
 
 #Calculations
 deliveryCost = deliveryDistance * deliveryRatePerKM
-purchaseCost = costofRecordPurchsed * salesTax
+recordTax = costofRecordPurchsed * salesTax
+purchaseCost = costofRecordPurchsed + recordTax
 totalCost = purchaseCost + deliveryCost
 
 #Output -print
-print(f"Purchase summary for{customerName}")
+print(f"Purchase summary for {customerName}")
 print("Delivery cost:\t${0:.2f}".format(deliveryCost))
 print("Purchase cost:\t${0:.2f}".format(purchaseCost))
-print()
+print("Total cost:\t${0:.2f}".format(totalCost))
 
 
 
